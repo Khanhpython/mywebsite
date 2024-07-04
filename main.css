@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ẩn thanh cuộn */
+    background-color: #767676;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Giúp phân bố đều các phần tử */
+    background-color: rgb(0, 0, 0);
+    width: 100%; /* Sử dụng chiều rộng toàn màn hình */
+    max-width: 1300px; /* Đặt chiều rộng tối đa nếu muốn */
+    height: 80px; /* Chiều cao cố định */
+    margin:auto; /* Trung tâm hóa container */
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+}
+
+.flex-container img {
+    margin-right: 10px;
+    width: 50px; /* Kích thước cố định cho logo */
+    height: auto;
+    border-radius: 50%;
+}
+
+.Python,.Unity,.OnlineGame{
+    background-color: #000000;
+    width: 225px;
+    height: 80px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+.Python:hover, .Unity:hover,.OnlineGame:hover{
+    background-color: #4343437a;
+    border-bottom: 8px solid red;
+}
+
+.container {
+    background-color: #000000;
+    width: 100px;
+    height: 70px;
+    color: #ffffff;
+    padding: 10px 20px; /* Kích thước cố định cho nút */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0px;
+    border: 5px solid rgb(255, 255, 255);
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+
+.flex-container input {
+    margin-right: 10px;
+    width: 180px; /* Kích thước cố định cho input */
+    height: 25px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #262626;
+    color: #999999;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.KeitaCoder {
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    font-size: 24px; /* Kích thước cố định cho font chữ */
+}
+
+input[type="text"] {
+    background-color: #262626;
+    width: 180px; /* Kích thước cố định */
+    padding: 10px;
+    color: #999999;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #a29292;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #434343;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px; /* Kích thước cố định cho nút */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.button-flex1,.button-flex2,.button-flex3{
+    display: flex;
+    align-items: center;
+}
+
+.button-flex1 h3, .button-flex2 h3, .button-flex3 h3{
+    margin-left: 10px;
+    color: #ccc;
+}
+.button-flex1{
+    width: 189px;
+    height: 45px;
+    background-color: #575757;
+    margin-top: 2px;
+    margin-left: 85%;
+    border-radius:100px;
+    animation: button-Animator1;
+    animation-duration: 1s;
+}
+
+@keyframes button-Animator1{
+    from{margin-left:180%}
+}
+
+.button-flex2{
+    width: 189px;
+    height: 45px;
+    background-color: #626262;
+    margin-top: 2px;
+    margin-left: 85%;
+    border-radius:100px;
+    animation: button-Animator2;
+    animation-duration: 1.5s;
+}
+
+@keyframes button-Animator2{
+    from{margin-left:200%}
+}
+
+.button-flex3{
+    width: 189px;
+    height: 45px;
+    background-color: #575757;
+    margin-top: 2px;
+    margin-left: 85%;
+    border-radius:100px;
+    animation: button-Animator3;
+    animation-duration: 2s;
+}
+
+@keyframes button-Animator3{
+    from{margin-left:200%}
+}
+
+.button-flex button{
+    position: relative;
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.b1{
+    animation: mySlide1;
+    animation-duration: 1.5s;
+}
+
+@keyframes mySlide1{
+    from{margin-left: 150%;}
+    to{margin-left:0%;}
+}
+
+.b2{
+    animation: mySlide2;
+    animation-duration: 2s;
+}
+
+@keyframes mySlide2{
+    from{margin-left: 150%;}
+    to{margin-left:0%;}
+}
+
+.b3{
+    animation: mySlide3;
+    animation-duration: 2.5s;
+}
+
+@keyframes mySlide3{
+    from{margin-left: 150%;}
+    to{margin-left:0%;}
+}
